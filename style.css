@@ -67,6 +67,10 @@ img {
     font-size:0.9rem;
 }
 
+#daummap {
+    align:center;
+}
+
 #daumRoughmapContainer1641567999486 {
     width:80%;
     max-width:640px;
