@@ -88,8 +88,15 @@
 
 		<p>
 			👰 신부 : 용세라<br>
-			👰 신부 아버지 : 용환준, 우체국 500777-02-086510<br>
-			🤵 신랑 : 배대한, 신한은행 562-04-137762<br>
+			👰 신부 아버지 : 용환준, 
+			<p class="box01">
+		<input id="myInput" value="우체국 500777-02-086510" readonly>
+		<button onclick="copy_to_clipboard(event)"><img src="https://blog.kakaocdn.net/dn/N1wUc/btqIl7XZtKM/b44qX9Six1vczz2ISWj4LK/img.png" alt="복사하기">
+		</button></p>
+			🤵 신랑 : 배대한, <p class="box01">
+		<input id="myInput" value="신한은행 562-04-137762" readonly>
+		<button onclick="copy_to_clipboard(event)"><img src="https://blog.kakaocdn.net/dn/N1wUc/btqIl7XZtKM/b44qX9Six1vczz2ISWj4LK/img.png" alt="복사하기">
+		</button></p>
 			🤵 신랑 아버지 : <br>
 			🤵 신랑 어머니 : <br>
 		</p>
@@ -111,6 +118,17 @@
 				"mapWidth" : "375",
 				"mapHeight" : "400"
 			}).render();
-		</script>		
+		</script>
+
+		<script>
+			function copy_to_clipboard(event) {    
+				var copyText = event.target.parentNode.previousElementSibling;
+			  	copyText.select();
+			  	copyText.setSelectionRange(0, 99999);
+			  	document.execCommand("Copy");
+			  	alert('복사되었습니다, 감사합니다.');
+			}   
+		</script>
+
 	</body>
 </html>
