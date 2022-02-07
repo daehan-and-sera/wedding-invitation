@@ -54,9 +54,8 @@ img {
         }
         .box01 button{
             border:none;
-            width:30px;
+            width:50px;
             max-width: 50px;
-            vertical-align: bottom;
         }
         .box01 button img{
             width: 100%;
